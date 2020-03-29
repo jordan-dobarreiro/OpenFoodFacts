@@ -1,0 +1,9 @@
+﻿<Application x:Class="BOUTAKHOT_DO_BARREIRO_LANCMAN.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BOUTAKHOT_DO_BARREIRO_LANCMAN"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
