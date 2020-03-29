@@ -20,9 +20,41 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<string> m_list_categories;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void SearchNameClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SearchBarecodeClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SearchCategoryClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CategorySelectChange(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        public List<string> ListCategories
+        {
+            get { return m_list_categories; }
+            set 
+            {
+                m_list_categories = value;
+                OnPropertyChanged("ListCategories");
+            }
         }
     }
 }
