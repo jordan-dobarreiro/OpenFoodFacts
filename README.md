@@ -1,1 +1,1 @@
-# OpenFoodFacts-
+# OpenFoodFacts
