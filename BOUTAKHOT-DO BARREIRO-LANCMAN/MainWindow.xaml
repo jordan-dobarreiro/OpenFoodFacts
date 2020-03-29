@@ -45,7 +45,6 @@
                                 FontSize="20"
                                 FontWeight="Bold"
                                 Background="White"
-                                Click="searchBarcodeClick"
                             />
                         </StackPanel>
 
@@ -69,7 +68,7 @@
                                 FontSize="20"
                                 FontWeight="Bold"
                                 Background="White"
-                                Click="searchNameClick"
+
                             />
                         </StackPanel>
                         
@@ -84,7 +83,6 @@
                                 Name="CategoryBox"
                                 Width="200"
                                 Margin="2,0,0,0"
-                                SelectionChanged="categorySelectChange"
                                 ItemsSource="{Binding Path=ComboFacets}" 
                             />
 
@@ -95,7 +93,7 @@
                                 FontSize="20"
                                 FontWeight="Bold"
                                 Background="White"
-                                Click="searchCategoryClick"
+
                             />
                         </StackPanel>
 

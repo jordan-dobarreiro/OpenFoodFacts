@@ -53,7 +53,7 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
             set 
             {
                 m_list_categories = value;
-                OnPropertyChanged("ListCategories");
+               /// OnPropertyChanged("ListCategories");
             }
         }
     }
