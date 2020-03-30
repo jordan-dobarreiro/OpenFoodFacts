@@ -1,0 +1,51 @@
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.exe.config
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.exe
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.pdb
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.csprojAssemblyReference.cache
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\MainWindow.g.cs
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\App.g.cs
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN_MarkupCompile.cache
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN_MarkupCompile.lref
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\MainWindow.baml
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.g.resources
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT_DO_BARREIRO_LANCMAN.Properties.Resources.resources
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.csproj.GenerateResource.cache
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.csproj.CopyComplete
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.exe
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.pdb
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.csprojAssemblyReference.cache
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\MainWindow.g.cs
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\App.g.cs
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN_MarkupCompile.cache
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN_MarkupCompile.lref
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.exe
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.pdb
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.exe.config
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.exe
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.pdb
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\MainWindow.baml
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.g.resources
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT_DO_BARREIRO_LANCMAN.Properties.Resources.resources
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.csproj.GenerateResource.cache
+C:\Users\Nathan\Documents\ING4\Semestre 8\Microsoft C#\Nouveau dossier\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.csproj.CopyComplete
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.exe.config
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.exe
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.pdb
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.csprojAssemblyReference.cache
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\MainWindow.g.cs
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\App.g.cs
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN_MarkupCompile.cache
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN_MarkupCompile.lref
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\MainWindow.baml
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.g.resources
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT_DO_BARREIRO_LANCMAN.Properties.Resources.resources
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.csproj.GenerateResource.cache
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.csproj.CopyComplete
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.exe
+C:\Users\Jordan\Desktop\Cours\ING4\ING4 Semestre 2\C#\OpenFoodFacts\BOUTAKHOT-DO BARREIRO-LANCMAN\obj\Debug\BOUTAKHOT-DO BARREIRO-LANCMAN.pdb
