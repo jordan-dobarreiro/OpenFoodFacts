@@ -90,6 +90,7 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
         {
             this.Box.ItemsSource = null;
             this.Box.Items.Clear();
+            m_list_products.Clear();
             string name = ProductName.Text;
 
             string url = "https://fr.openfoodfacts.org/cgi/search.pl?search_terms=" + name + "&search_simple=1&action=process&json=1";
@@ -128,6 +129,7 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
         {
             this.Box.ItemsSource = null;
             this.Box.Items.Clear();
+            m_list_products.Clear();
             string code = BarcodeSearch.Text;
 
             string url = "https://ssl-api.openfoodfacts.org/api/v0/product/" + code;
@@ -164,6 +166,6 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
             string category = CategoryBox.Text;
             GetAllProducts(category);
             this.Box.ItemsSource = m_list_products;
-        }
+        }
     }
 }
