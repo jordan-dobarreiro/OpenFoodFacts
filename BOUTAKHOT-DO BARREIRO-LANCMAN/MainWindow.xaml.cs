@@ -27,20 +27,24 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
         public MainWindow()
         {
             InitializeComponent();
+            GetAllCategories();
+            this.CategoryBox.ItemsSource = m_list_categories;
         }
 
-        //public void GetAllProducts(string url)
-        public void GetAllProducts()
+        public void GetAllProducts(string category)
         {
-            string url = "https://fr.openfoodfacts.org/categorie/pains.json";
-            WebClient webClient = new WebClient() { Encoding = Encoding.UTF8 };
+            m_list_products.Clear();
+            string url = "https://fr.openfoodfacts.org/categorie/" + category + ".json";
+            WebClient webClient = new WebClient()
+            {
+                Encoding = Encoding.UTF8
+            };
             webClient.UseDefaultCredentials = true;
             var json = webClient.DownloadString(url);
 
             JToken jtokens = JObject.Parse(json)["products"];
             foreach (JToken jtoken in jtokens)
             {
-                //MessageBox.Show((string)jtoken["product_name"]);
                 Product product = new Product
                 {
                     product_name = (string)jtoken["product_name"],
@@ -53,7 +57,7 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
                     barcode = (string)jtoken["id"],
                     stores = (string)jtoken["stores"]
                 };
-                //Product product = new Product((string)jtoken["product_name"], (string)jtoken["image_thumb_url"], (string)jtoken["quantity"], (string)jtoken["expiration_date"], (string)jtoken["brands"], (string)jtoken["nutriscore_grade"], (string)jtoken["ingredients_text"], (string)jtoken["id"]);
+                
                 if (!String.IsNullOrEmpty(product.product_name))
                 {
                     m_list_products.Add(product);
@@ -61,20 +65,109 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
             }
         }
 
+        public void GetAllCategories()
+        {
+            string url = "https://fr.openfoodfacts.org/categories.json";
+            WebClient webClient = new WebClient()
+            {
+                Encoding = Encoding.UTF8
+            };
+            webClient.UseDefaultCredentials = true;
+            var json = webClient.DownloadString(url);
+
+            JToken jtokens = JObject.Parse(json)["tags"];
+            foreach (JToken jtoken in jtokens)
+            {
+                string category = (string)jtoken["name"];
+                if (!String.IsNullOrEmpty(category))
+                {
+                    m_list_categories.Add(category);
+                }
+            }
+        }
+
         private void SearchNameClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("bite");
+            this.Box.ItemsSource = null;
+            this.Box.Items.Clear();
+            string name = ProductName.Text;
+
+            string url = "https://fr.openfoodfacts.org/cgi/search.pl?search_terms=" + name + "&search_simple=1&action=process&json=1";
+            WebClient webClient = new WebClient()
+            {
+                Encoding = Encoding.UTF8
+            };
+            webClient.UseDefaultCredentials = true;
+            var json = webClient.DownloadString(url);
+
+            JToken jtokens = JObject.Parse(json)["products"];
+            foreach (JToken jtoken in jtokens)
+            {
+                Product product = new Product
+                {
+                    product_name = (string)jtoken["product_name"],
+                    image_url = (string)jtoken["image_thumb_url"],
+                    quantity = (string)jtoken["quantity"],
+                    expiration_date = (string)jtoken["expiration_date"],
+                    brand = (string)jtoken["brands"],
+                    nutriscore = (string)jtoken["nutriscore_grade"],
+                    ingredients = (string)jtoken["ingredients_text"],
+                    barcode = (string)jtoken["id"]
+                };
+
+                if (!String.IsNullOrEmpty(product.product_name))
+                {
+                    m_list_products.Add(product);
+                }
+            }
+
+            this.Box.ItemsSource = m_list_products;
         }
 
         private void SearchBarcodeClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("oui");
+            this.Box.ItemsSource = null;
+            this.Box.Items.Clear();
+            string code = BarcodeSearch.Text;
+
+            string url = "https://ssl-api.openfoodfacts.org/api/v0/product/" + code;
+            WebClient webClient = new WebClient()
+            {
+                Encoding = Encoding.UTF8
+            };
+            webClient.UseDefaultCredentials = true;
+            var json = webClient.DownloadString(url);
+            JToken jtoken;
+            jtoken = JObject.Parse(json);
+
+
+                Product product = new Product
+                {
+                    product_name = (string)jtoken["product_name"],
+                    image_url = (string)jtoken["image_thumb_url"],
+                    quantity = (string)jtoken["quantity"],
+                    expiration_date = (string)jtoken["expiration_date"],
+                    brand = (string)jtoken["brands"],
+                    nutriscore = (string)jtoken["nutriscore_grade"],
+                    ingredients = (string)jtoken["ingredients_text"],
+                    barcode = (string)jtoken["id"]
+                };
+            MessageBox.Show((string)jtoken["product_name"]);
+            if (!String.IsNullOrEmpty(product.product_name))
+                {
+                    m_list_products.Add(product);
+                }
+            
+
+            this.Box.ItemsSource = m_list_products;
         }
 
         private void SearchCategoryClick(object sender, RoutedEventArgs e)
         {
-            //List<Product> m_list_products = new List<Product>();
-            GetAllProducts();
+            this.Box.ItemsSource = null;
+            this.Box.Items.Clear();
+            string category = CategoryBox.Text;
+            GetAllProducts(category);
             this.Box.ItemsSource = m_list_products;
         }
 
