@@ -8,7 +8,8 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
 {
     public class Product
     {
-        public Product(string product_name, string image_url, string quantity, string expiration_date, string brand, string nutriscore, string ingredients, string barcode)
+        //public Product();
+        /*public Product(string product_name, string image_url, string quantity, string expiration_date, string brand, string nutriscore, string ingredients, string barcode)
         {
             this.product_name = product_name;
             this.image_url = image_url;
@@ -18,7 +19,7 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
             this.nutriscore = nutriscore;
             this.ingredients = ingredients;
             this.barcode = barcode;
-        }
+        }*/
         public string product_name { get; set; }
         public string image_url { get; set; }
         public string quantity { get; set; }

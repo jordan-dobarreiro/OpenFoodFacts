@@ -99,6 +99,7 @@
                         </StackPanel>
 
                         <ListBox 
+                            x:Name="Box"
                             ItemsSource="{Binding m_list_products}"
                             Margin="20"
                             SelectedItem=""
@@ -118,7 +119,6 @@
 
                                         <StackPanel Orientation="Vertical" Width="150">
                                             <StackPanel Orientation="Horizontal">
-
                                                 <TextBlock Text="{Binding product_name}"/>
                                                 <TextBlock Text="{Binding barcode}"/>
                                                 <TextBlock Text="{Binding brand}"/>
