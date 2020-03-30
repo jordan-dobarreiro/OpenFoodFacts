@@ -136,28 +136,23 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
             };
             webClient.UseDefaultCredentials = true;
             var json = webClient.DownloadString(url);
-            JToken jtoken;
-            jtoken = JObject.Parse(json);
 
-
-                Product product = new Product
-                {
-                    product_name = (string)jtoken["product_name"],
-                    image_url = (string)jtoken["image_thumb_url"],
-                    quantity = (string)jtoken["quantity"],
-                    expiration_date = (string)jtoken["expiration_date"],
-                    brand = (string)jtoken["brands"],
-                    nutriscore = (string)jtoken["nutriscore_grade"],
-                    ingredients = (string)jtoken["ingredients_text"],
-                    barcode = (string)jtoken["id"]
-                };
-            MessageBox.Show((string)jtoken["product_name"]);
+            JToken jtoken = JObject.Parse(json)["product"];
+            Product product = new Product
+            {
+                product_name = (string)jtoken["product_name"],
+                image_url = (string)jtoken["image_thumb_url"],
+                quantity = (string)jtoken["quantity"],
+                expiration_date = (string)jtoken["expiration_date"],
+                brand = (string)jtoken["brands"],
+                nutriscore = (string)jtoken["nutriscore_grade"],
+                ingredients = (string)jtoken["ingredients_text"],
+                barcode = (string)jtoken["id"]
+            };
             if (!String.IsNullOrEmpty(product.product_name))
-                {
-                    m_list_products.Add(product);
-                }
-            
-
+            {
+                m_list_products.Add(product);
+            }
             this.Box.ItemsSource = m_list_products;
         }
 
@@ -168,15 +163,6 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
             string category = CategoryBox.Text;
             GetAllProducts(category);
             this.Box.ItemsSource = m_list_products;
-        }
-
-        private void CategorySelectChange(object sender, SelectionChangedEventArgs e)
-        {
-            MessageBox.Show("bite");
-        }
-        private string GetLink(Product produit)
-        {
-            return "https://fr.openfoodfacts.org/produit/" + produit.barcode;
         }
     }
 }
