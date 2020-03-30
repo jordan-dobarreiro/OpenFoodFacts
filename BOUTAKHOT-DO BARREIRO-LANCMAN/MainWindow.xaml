@@ -33,6 +33,7 @@
                             />
 
                             <TextBox
+                                Name = "BarcodeSearch"
                                 Width="200"
                                 Text=""
                                 Margin="6,0,0,0"
