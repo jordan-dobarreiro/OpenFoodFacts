@@ -137,14 +137,5 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
             GetAllProducts(category);
             this.Box.ItemsSource = m_list_products;
         }
-
-        private void CategorySelectChange(object sender, SelectionChangedEventArgs e)
-        {
-            MessageBox.Show("bite");
-        }
-        private string GetLink(Product produit)
-        {
-            return "https://fr.openfoodfacts.org/produit/" + produit.barcode;
-        }
     }
 }
