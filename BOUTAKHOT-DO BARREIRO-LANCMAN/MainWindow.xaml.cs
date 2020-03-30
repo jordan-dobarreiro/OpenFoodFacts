@@ -27,20 +27,24 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
         public MainWindow()
         {
             InitializeComponent();
+            GetAllCategories();
+            this.CategoryBox.ItemsSource = m_list_categories;
         }
 
-        //public void GetAllProducts(string url)
-        public void GetAllProducts()
+        public void GetAllProducts(string category)
         {
-            string url = "https://fr.openfoodfacts.org/categorie/pains.json";
-            WebClient webClient = new WebClient();
+            m_list_products.Clear();
+            string url = "https://fr.openfoodfacts.org/categorie/" + category + ".json";
+            WebClient webClient = new WebClient()
+            {
+                Encoding = Encoding.UTF8
+            };
             webClient.UseDefaultCredentials = true;
             var json = webClient.DownloadString(url);
 
             JToken jtokens = JObject.Parse(json)["products"];
             foreach (JToken jtoken in jtokens)
             {
-                //MessageBox.Show((string)jtoken["product_name"]);
                 Product product = new Product
                 {
                     product_name = (string)jtoken["product_name"],
@@ -52,7 +56,7 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
                     ingredients = (string)jtoken["ingredients_text"],
                     barcode = (string)jtoken["id"]
                 };
-                //Product product = new Product((string)jtoken["product_name"], (string)jtoken["image_thumb_url"], (string)jtoken["quantity"], (string)jtoken["expiration_date"], (string)jtoken["brands"], (string)jtoken["nutriscore_grade"], (string)jtoken["ingredients_text"], (string)jtoken["id"]);
+                
                 if (!String.IsNullOrEmpty(product.product_name))
                 {
                     m_list_products.Add(product);
@@ -60,20 +64,45 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
             }
         }
 
+        public void GetAllCategories()
+        {
+            string url = "https://fr.openfoodfacts.org/categories.json";
+            WebClient webClient = new WebClient()
+            {
+                Encoding = Encoding.UTF8
+            };
+            webClient.UseDefaultCredentials = true;
+            var json = webClient.DownloadString(url);
+
+            JToken jtokens = JObject.Parse(json)["tags"];
+            foreach (JToken jtoken in jtokens)
+            {
+                string category = (string)jtoken["name"];
+                if (!String.IsNullOrEmpty(category))
+                {
+                    m_list_categories.Add(category);
+                }
+            }
+        }
+
         private void SearchNameClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("bite");
+            this.Box.ItemsSource = null;
+            this.Box.Items.Clear();
         }
 
         private void SearchBarcodeClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("oui");
+            this.Box.ItemsSource = null;
+            this.Box.Items.Clear();
         }
 
         private void SearchCategoryClick(object sender, RoutedEventArgs e)
         {
-            //List<Product> m_list_products = new List<Product>();
-            GetAllProducts();
+            this.Box.ItemsSource = null;
+            this.Box.Items.Clear();
+            string category = CategoryBox.Text;
+            GetAllProducts(category);
             this.Box.ItemsSource = m_list_products;
         }
 
