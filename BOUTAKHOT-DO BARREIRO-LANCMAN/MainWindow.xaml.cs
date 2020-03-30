@@ -33,7 +33,7 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
         public void GetAllProducts()
         {
             string url = "https://fr.openfoodfacts.org/categorie/pains.json";
-            WebClient webClient = new WebClient();
+            WebClient webClient = new WebClient() { Encoding = Encoding.UTF8 };
             webClient.UseDefaultCredentials = true;
             var json = webClient.DownloadString(url);
 
@@ -50,7 +50,8 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
                     brand = (string)jtoken["brands"],
                     nutriscore = (string)jtoken["nutriscore_grade"],
                     ingredients = (string)jtoken["ingredients_text"],
-                    barcode = (string)jtoken["id"]
+                    barcode = (string)jtoken["id"],
+                    stores = (string)jtoken["stores"]
                 };
                 //Product product = new Product((string)jtoken["product_name"], (string)jtoken["image_thumb_url"], (string)jtoken["quantity"], (string)jtoken["expiration_date"], (string)jtoken["brands"], (string)jtoken["nutriscore_grade"], (string)jtoken["ingredients_text"], (string)jtoken["id"]);
                 if (!String.IsNullOrEmpty(product.product_name))

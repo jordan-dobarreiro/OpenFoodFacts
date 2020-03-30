@@ -28,5 +28,6 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
         public string nutriscore { get; set; }
         public string ingredients { get; set; }
         public string barcode { get; set; }
+        public string stores { get; set; }
     }
 }

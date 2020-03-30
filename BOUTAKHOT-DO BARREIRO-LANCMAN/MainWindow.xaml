@@ -111,24 +111,110 @@
                             <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal">
+                                        <Border
+                                            Margin="3"
+                                            BorderBrush="#333232"
+                                            BorderThickness="2"
+                                            Background="#DADADA"
 
-                                        <Image 
-                                            Width="75"
+                                            >
+
+                                            <Image 
+                                            Margin="5"
+                                            Width="100"
+                                            Height="100"
                                             Source="{Binding image_url}"
                                         />
+                                        </Border>
 
-                                        <StackPanel Orientation="Vertical" Width="150">
-                                            <StackPanel Orientation="Horizontal">
-                                                <TextBlock Text="{Binding product_name}"/>
-                                                <TextBlock Text="{Binding barcode}"/>
-                                                <TextBlock Text="{Binding brand}"/>
-                                                <TextBlock Text="{Binding expiration_date}"/>
-                                                <TextBlock Text="{Binding nutriscore}"/>
-                                            </StackPanel>
+                                        <StackPanel
+                                            Orientation="Vertical"
+                                            Width="150"
+                                            VerticalAlignment="Center">
+                                            
+                                            
+                                                <TextBlock
+                                                    FontSize="15"
+                                                    TextWrapping="Wrap"
+                                                    FontWeight="Bold"
+                                                    Foreground="DarkMagenta"
+                                                    TextAlignment="Center"
+                                                    Width="150"
+                                                    Text="{Binding product_name}"/>
+                                            
+                                                <TextBlock
+                                                    FontSize="12"
+                                                    TextWrapping="Wrap"
+                                                    FontWeight="DemiBold"
+                                                    Foreground="#444040"
+                                                    TextAlignment="Center"
+                                                    Text="{Binding barcode}"/>
+
+                                            
+                                        </StackPanel >
+                                        <StackPanel 
+                                            Orientation="Vertical"
+                                            Width="100"
+                                            VerticalAlignment="Center"
+                                            
+                                        >
+                                            <TextBlock 
+                                                FontSize="13"
+                                                TextWrapping="Wrap"
+                                                FontWeight="Bold"
+                                                TextAlignment="Center"
+                                                Text="{Binding brand}"/>
+                                        </StackPanel>
+                                        
+                                        <StackPanel 
+                                            Orientation="Vertical"
+                                            Width="300"
+                                            >
+                                            <TextBlock
+                                                FontWeight="Bold"
+                                                FontSize="13"
+                                                Text="Ingrédients" />
+                                            <TextBlock 
+                                                TextWrapping="Wrap"
+                                                Text="{Binding ingredients}"/>
+                                            
+                                            
                                         </StackPanel>
 
-                                        <StackPanel Orientation="Vertical" Width="300">
-                                            <TextBlock Text="{Binding ingredients}"/>
+                                        <StackPanel 
+                                            Orientation="Vertical"
+                                            Width="150"
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Center"
+                                            >
+                                            <TextBlock
+                                                FontWeight="Bold"
+                                                FontSize="13"
+                                                TextAlignment="Center"
+                                                Text="Stores" />
+                                            <TextBlock 
+                                                TextWrapping="Wrap"
+                                                TextAlignment="Center"
+                                                Text="{Binding stores}"/>
+                                        </StackPanel>
+
+
+                                        <StackPanel 
+                                            Orientation="Vertical"
+                                            Width="60"
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Center"
+                                            >
+                                            <TextBlock
+                                                FontWeight="Bold"
+                                                TextWrapping="Wrap"
+                                                FontSize="13"
+                                                TextAlignment="Center"
+                                                Text="Nutrition Score" />
+                                            <TextBlock 
+                                                TextWrapping="Wrap"
+                                                TextAlignment="Center"
+                                                Text="{Binding nutriscore}"/>
                                         </StackPanel>
                                     </StackPanel>
                                 </DataTemplate>
