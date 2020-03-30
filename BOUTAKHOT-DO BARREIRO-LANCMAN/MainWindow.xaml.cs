@@ -113,7 +113,8 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
                     brand = (string)jtoken["brands"],
                     nutriscore = (string)jtoken["nutriscore_grade"],
                     ingredients = (string)jtoken["ingredients_text"],
-                    barcode = (string)jtoken["id"]
+                    barcode = (string)jtoken["id"],
+                    stores = (string)jtoken["stores"]
                 };
 
                 if (!String.IsNullOrEmpty(product.product_name))
@@ -150,7 +151,8 @@ namespace BOUTAKHOT_DO_BARREIRO_LANCMAN
                 brand = (string)jtoken["brands"],
                 nutriscore = (string)jtoken["nutriscore_grade"],
                 ingredients = (string)jtoken["ingredients_text"],
-                barcode = (string)jtoken["id"]
+                barcode = (string)jtoken["id"],
+                stores = (string)jtoken["stores"]
             };
             if (!String.IsNullOrEmpty(product.product_name))
             {
